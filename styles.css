@@ -107,16 +107,18 @@ img {
 }
 
 .logo {
-    font-family: var(--font-display);
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: var(--color-primary);
-    letter-spacing: 4px;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
-.logo:hover {
-    color: var(--color-primary-light);
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: opacity var(--transition);
+}
+
+.logo:hover .logo-img {
+    opacity: 0.85;
 }
 
 .nav-links {
@@ -276,29 +278,20 @@ img {
     z-index: 2;
 }
 
-.hero-subtitle {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+.hero-logo {
+    margin-bottom: 32px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.3s forwards;
+    animation: fadeInUp 0.8s ease 0.4s forwards;
 }
 
-.hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(4rem, 12vw, 9rem);
-    font-weight: 900;
-    color: var(--color-white);
-    letter-spacing: 12px;
-    line-height: 1;
-    margin-bottom: 24px;
-    text-shadow: 0 4px 30px rgba(200, 169, 110, 0.2);
-    opacity: 0;
-    animation: fadeInUp 0.8s ease 0.5s forwards;
+.hero-logo-img {
+    max-width: 420px;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    filter: brightness(1.1);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 
 .hero-desc {
