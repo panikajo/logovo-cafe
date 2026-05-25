@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGOVO — Кафе-бар</title>
+    <meta name="description" content="LOGOVO — уютный кафе-бар с авторской кухней и крафтовыми напитками. Забронируйте столик прямо сейчас.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">LOGOVO</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#contact" class="btn btn-nav">Забронировать</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">Кафе-бар</p>
+            <h1 class="hero-title">LOGOVO</h1>
+            <p class="hero-desc">Уютное место, где каждый найдёт что-то своё.<br>Авторская кухня, крафтовые напитки и тёплая атмосфера.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Смотреть меню</a>
+                <a href="#contact" class="btn btn-outline">Забронировать столик</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Листайте вниз</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Добро пожаловать</p>
+                <h2 class="section-title">Наше Logovo</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>LOGOVO — это место, где время замедляется. Мы создали пространство, в котором хочется остаться: уютный интерьер, приглушённый свет и музыка, которая не мешает разговору.</p>
+                    <p>Наша кухня — это сочетание классических рецептов и авторских находок. Мы используем только свежие и локальные продукты, чтобы каждое блюдо было особенным.</p>
+                    <p>А наш бар предложит вам широкий выбор крафтовых напитков, авторских коктейлей и отличного кофе.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🍳</div>
+                        <h3>Авторская кухня</h3>
+                        <p>Блюда от нашего шеф-повара из свежих локальных продуктов</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🍸</div>
+                        <h3>Крафтовый бар</h3>
+                        <p>Авторские коктейли, крафтовое пиво и отличный кофе</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Живая музыка</h3>
+                        <p>Выступления музыкантов каждую пятницу и субботу</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Попробуйте</p>
+                <h2 class="section-title">Наше Меню</h2>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="starters">Закуски</button>
+                <button class="menu-tab" data-category="salads">Салаты</button>
+                <button class="menu-tab" data-category="main">Горячее</button>
+                <button class="menu-tab" data-category="desserts">Десерты</button>
+                <button class="menu-tab" data-category="drinks">Напитки</button>
+                <button class="menu-tab" data-category="bar">Бар</button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="menu-content">
+                <!-- Starters -->
+                <div class="menu-category active" id="starters">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Брускетта с томатами</h3>
+                                <span class="menu-item-price">380 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Хрустящий хлеб, свежие томаты черри, базилик, оливковое масло, бальзамик</p>
+                            <span class="menu-item-weight">180 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Хумус с питой</h3>
+                                <span class="menu-item-price">420 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Домашний хумус из нута с паприкой, подаётся с тёплой питой</p>
+                            <span class="menu-item-weight">250 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Сырная тарелка</h3>
+                                <span class="menu-item-price">890 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Ассорти из 4 видов сыра с мёдом, орехами и виноградом</p>
+                            <span class="menu-item-weight">300 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Куриные крылья BBQ</h3>
+                                <span class="menu-item-price">520 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Запечённые крылья в соусе BBQ с сельдереем и соусом блю-чиз</p>
+                            <span class="menu-item-weight">350 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Креветки в чесночном масле</h3>
+                                <span class="menu-item-price">750 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тигровые креветки, обжаренные с чесноком, чили и петрушкой</p>
+                            <span class="menu-item-weight">200 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Тартар из лосося</h3>
+                                <span class="menu-item-price">680 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Свежий лосось, авокадо, каперсы, красный лук, соус понзу</p>
+                            <span class="menu-item-weight">180 г</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salads -->
+                <div class="menu-category" id="salads">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Цезарь с курицей</h3>
+                                <span class="menu-item-price">520 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Романо, куриное филе гриль, пармезан, гренки, соус цезарь</p>
+                            <span class="menu-item-weight">280 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Греческий салат</h3>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Свежие овощи, маслины, фета, оливковое масло, орегано</p>
+                            <span class="menu-item-weight">300 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Тёплый салат с говядиной</h3>
+                                <span class="menu-item-price">650 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Ростбиф, микс салатов, томаты черри, пармезан, бальзамик</p>
+                            <span class="menu-item-weight">290 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Салат с тунцом</h3>
+                                <span class="menu-item-price">580 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тунец, авокадо, микс салатов, яйцо, кунжутная заправка</p>
+                            <span class="menu-item-weight">270 г</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-category" id="main">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Стейк Рибай</h3>
+                                <span class="menu-item-price">1890 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Мраморная говядина, картофель гратен, соус из зелёного перца</p>
+                            <span class="menu-item-weight">350 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Паста Карбонара</h3>
+                                <span class="menu-item-price">580 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Спагетти, гуанчиале, яичный желток, пекорино романо, чёрный перец</p>
+                            <span class="menu-item-weight">320 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Бургер LOGOVO</h3>
+                                <span class="menu-item-price">720 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Говяжья котлета, чеддер, бекон, карамелизированный лук, фирменный соус, картофель фри</p>
+                            <span class="menu-item-weight">400 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Лосось на гриле</h3>
+                                <span class="menu-item-price">980 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Филе лосося, овощи гриль, лимонно-укропный соус</p>
+                            <span class="menu-item-weight">300 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Том Ям с креветками</h3>
+                                <span class="menu-item-price">650 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тайский острый суп с тигровыми креветками, грибами и кокосовым молоком</p>
+                            <span class="menu-item-weight">350 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Ризотто с грибами</h3>
+                                <span class="menu-item-price">620 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Рис арборио, белые грибы, пармезан, трюфельное масло</p>
+                            <span class="menu-item-weight">300 г</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Тирамису</h3>
+                                <span class="menu-item-price">420 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классический итальянский десерт с маскарпоне и кофе</p>
+                            <span class="menu-item-weight">180 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Чизкейк Нью-Йорк</h3>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Нежный сливочный чизкейк с ягодным соусом</p>
+                            <span class="menu-item-weight">200 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Шоколадный фондан</h3>
+                                <span class="menu-item-price">480 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тёплый шоколадный кекс с жидкой начинкой, ванильное мороженое</p>
+                            <span class="menu-item-weight">220 г</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Крем-брюле</h3>
+                                <span class="menu-item-price">380 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классический французский десерт с карамельной корочкой</p>
+                            <span class="menu-item-weight">150 г</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-category" id="drinks">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Эспрессо</h3>
+                                <span class="menu-item-price">180 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классический эспрессо из зёрен specialty класса</p>
+                            <span class="menu-item-weight">30 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Капучино</h3>
+                                <span class="menu-item-price">280 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Эспрессо с нежной молочной пенкой</p>
+                            <span class="menu-item-weight">250 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Раф лавандовый</h3>
+                                <span class="menu-item-price">350 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Авторский раф с лавандовым сиропом и сливками</p>
+                            <span class="menu-item-weight">300 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Матча Латте</h3>
+                                <span class="menu-item-price">320 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Японский матча на овсяном молоке</p>
+                            <span class="menu-item-weight">300 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Свежевыжатый сок</h3>
+                                <span class="menu-item-price">350 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Апельсин / яблоко / морковь / грейпфрут</p>
+                            <span class="menu-item-weight">300 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Домашний лимонад</h3>
+                                <span class="menu-item-price">320 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классический / манго-маракуйя / клубника-базилик</p>
+                            <span class="menu-item-weight">400 мл</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bar -->
+                <div class="menu-category" id="bar">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Апероль Шприц</h3>
+                                <span class="menu-item-price">550 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Апероль, просекко, содовая, долька апельсина</p>
+                            <span class="menu-item-weight">300 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Негрони</h3>
+                                <span class="menu-item-price">620 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Джин, кампари, красный вермут</p>
+                            <span class="menu-item-weight">150 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">LOGOVO Special</h3>
+                                <span class="menu-item-price">680 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Авторский коктейль: бурбон, вишнёвый ликёр, биттер, апельсиновая цедра</p>
+                            <span class="menu-item-weight">200 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Мохито</h3>
+                                <span class="menu-item-price">520 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Белый ром, лайм, мята, тростниковый сахар, содовая</p>
+                            <span class="menu-item-weight">350 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Крафтовое пиво (0.5 л)</h3>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">IPA / Stout / Wheat — спрашивайте у бармена о наличии</p>
+                            <span class="menu-item-weight">500 мл</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Вино (бокал)</h3>
+                                <span class="menu-item-price">от 400 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Красное / Белое / Розе — подробная карта вин у официанта</p>
+                            <span class="menu-item-weight">150 мл</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Атмосфера</p>
+                <h2 class="section-title">Наше пространство</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large">
+                    <div class="gallery-placeholder">
+                        <span>Интерьер зала</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Барная стойка</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Блюда</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>Коктейли</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large">
+                    <div class="gallery-placeholder">
+                        <span>Живая музыка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Свяжитесь с нами</p>
+                <h2 class="section-title">Контакты</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Примерная, д. 42</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Время работы</h3>
+                        <p>Пн–Чт: 12:00 – 00:00</p>
+                        <p>Пт–Сб: 12:00 – 02:00</p>
+                        <p>Вс: 12:00 – 23:00</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Социальные сети</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Telegram</a>
+                            <a href="#" class="social-link">VK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Забронировать столик</h3>
+                    <form class="contact-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Дата</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Время</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Выберите</option>
+                                <option value="1">1 гость</option>
+                                <option value="2">2 гостя</option>
+                                <option value="3">3 гостя</option>
+                                <option value="4">4 гостя</option>
+                                <option value="5">5 гостей</option>
+                                <option value="6">6 гостей</option>
+                                <option value="7+">7 и более</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment" name="comment" rows="3" placeholder="Особые пожелания..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">LOGOVO</a>
+                    <p>Кафе-бар с авторской кухней<br>и крафтовыми напитками</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">О нас</a>
+                    <a href="#menu">Меню</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOGOVO. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
